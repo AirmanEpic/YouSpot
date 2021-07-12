@@ -1,0 +1,1103 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"genera",
+				"generateBFCA\tfunction"
+			],
+			[
+				"start_con",
+				"start_conversation_special"
+			],
+			[
+				"newpe",
+				"newperson"
+			],
+			[
+				"newp",
+				"newperson〔variable〕"
+			],
+			[
+				"beaut",
+				"beaut_traits"
+			],
+			[
+				"Thier",
+				"TheirFName"
+			],
+			[
+				"create_",
+				"create_new_character_birth"
+			],
+			[
+				"beau",
+				"beaut_traits"
+			],
+			[
+				"load_peo",
+				"load_person_party"
+			],
+			[
+				"potential",
+				"pot_interest〔variable〕"
+			],
+			[
+				"get_",
+				"get_int_latest"
+			],
+			[
+				"set_",
+				"set_relations"
+			],
+			[
+				"set_re",
+				"set_relations_unrest"
+			],
+			[
+				"Their",
+				"TheirFName"
+			],
+			[
+				"Thei",
+				"TheirFName"
+			],
+			[
+				"their",
+				"theirfname"
+			],
+			[
+				"set_r",
+				"set_relations_unrest"
+			],
+			[
+				"Cass",
+				"Cassiopia"
+			],
+			[
+				"obj",
+				"objective_pronoun"
+			],
+			[
+				"trait",
+				"find_trait_person"
+			],
+			[
+				"relations",
+				"set_relations"
+			],
+			[
+				"find_",
+				"find_relations"
+			],
+			[
+				"present",
+				"already_present"
+			],
+			[
+				"work",
+				"workplace_tgt"
+			],
+			[
+				"merch",
+				"merch_favorites"
+			],
+			[
+				"orcnames_",
+				"orcnames_female1"
+			],
+			[
+				"marriage",
+				"marriagepool"
+			],
+			[
+				"street",
+				"streetcount_needed"
+			],
+			[
+				"need",
+				"needstreets"
+			],
+			[
+				"pote",
+				"potentiallocations"
+			],
+			[
+				"peoplemo",
+				"peoplemodestage"
+			],
+			[
+				"fin_",
+				"find_i_from_tgt"
+			],
+			[
+				"poly",
+				"polydrawcol"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
+				"new_",
+				"new_outerWalls"
+			],
+			[
+				"intersec",
+				"ray_intersects_polygon"
+			],
+			[
+				"stroke",
+				"stroke_circle"
+			],
+			[
+				"inner",
+				"innersections"
+			],
+			[
+				"dir",
+				"find_poly_dir"
+			],
+			[
+				"weight",
+				"weighted_random"
+			],
+			[
+				"new_ou",
+				"new_outerWalls"
+			],
+			[
+				"poin",
+				"point_in_polygon"
+			],
+			[
+				"shape",
+				"shape_type"
+			],
+			[
+				"center",
+				"center_pos"
+			],
+			[
+				"outwe",
+				"outerWalls"
+			],
+			[
+				"outew",
+				"outerWalls"
+			],
+			[
+				"city",
+				"citycenter"
+			],
+			[
+				"found",
+				"foundUserID"
+			],
+			[
+				"sex",
+				"sexiness_distribution"
+			],
+			[
+				"max",
+				"max_pos"
+			],
+			[
+				"male",
+				"males_count"
+			],
+			[
+				"flex-",
+				"flex-start\tjustify-content"
+			],
+			[
+				"clik",
+				"click\t.click()"
+			],
+			[
+				"tgt",
+				"tgt"
+			],
+			[
+				"shot_",
+				"shot_count"
+			],
+			[
+				"current_",
+				"currentshot_i"
+			],
+			[
+				"true",
+				"THREE.Texture"
+			],
+			[
+				"countdown",
+				"mode_countdown"
+			],
+			[
+				"getKey",
+				"getKeyFromSocket"
+			],
+			[
+				"date_tar",
+				"date_target_id"
+			],
+			[
+				"assing",
+				"assigned_list"
+			],
+			[
+				"border",
+				"border-top-width"
+			],
+			[
+				"getKy",
+				"getKeyFromSocket"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"noise",
+				"noise2D"
+			],
+			[
+				"min",
+				"min\tMath.min()"
+			],
+			[
+				"dragging",
+				"dragging_option"
+			],
+			[
+				"eval",
+				"eval_graph"
+			],
+			[
+				"draw_",
+				"draw_heightmap"
+			],
+			[
+				"length",
+				"length"
+			],
+			[
+				"tolerance",
+				"tolerance"
+			],
+			[
+				"server",
+				"serverdt"
+			],
+			[
+				"rand",
+				"randstr"
+			],
+			[
+				"lm",
+				"clicked_lm"
+			],
+			[
+				"new",
+				"newprop"
+			],
+			[
+				"closest",
+				"closest_points"
+			],
+			[
+				"inters",
+				"intersect2"
+			],
+			[
+				"interect",
+				"intersect1"
+			],
+			[
+				"drawline",
+				"drawline_path"
+			],
+			[
+				"match",
+				"check_for_match"
+			],
+			[
+				"colli",
+				"collision_check"
+			],
+			[
+				"build",
+				"closest_building"
+			],
+			[
+				"keyroad",
+				"key_road_initial"
+			],
+			[
+				"road",
+				"keyt_road"
+			],
+			[
+				"keybuil",
+				"keybuilding_spots"
+			],
+			[
+				"lenght",
+				"lengthdir"
+			],
+			[
+				"keybui",
+				"keybuilding_spots"
+			],
+			[
+				"keybu",
+				"keybuilding_spots"
+			],
+			[
+				"generate",
+				"generateBoundingBox"
+			],
+			[
+				"keyb",
+				"keybuilding_spots"
+			],
+			[
+				"inte",
+				"intersect1"
+			],
+			[
+				"in",
+				"interesct2"
+			],
+			[
+				"interes",
+				"interesct1"
+			],
+			[
+				"tuto",
+				"tutorialstatus"
+			],
+			[
+				"b",
+				"BetterBottled"
+			],
+			[
+				"inv",
+				"invstr"
+			],
+			[
+				"this",
+				"this\t$(this)"
+			],
+			[
+				"retri",
+				"retreiveSettings"
+			],
+			[
+				"data",
+				"DataObj"
+			],
+			[
+				"JSON",
+				"json_decode"
+			],
+			[
+				"retrei",
+				"retrieveMessageBoard"
+			],
+			[
+				"receive",
+				"receiveInitialMessages"
+			],
+			[
+				"potenti",
+				"potential_dest"
+			],
+			[
+				"conv",
+				"current_conversations"
+			],
+			[
+				"retreive",
+				"retreiveProfile"
+			],
+			[
+				"sz",
+				"sz"
+			],
+			[
+				"JSON_",
+				"json_encode"
+			],
+			[
+				"initial",
+				"initialmessages"
+			],
+			[
+				"tex",
+				"text_color"
+			],
+			[
+				"nav",
+				"navbar-size"
+			],
+			[
+				"text",
+				"text_dark"
+			],
+			[
+				"recei",
+				"receiveInitialMessages"
+			],
+			[
+				"php",
+				"php_scripts"
+			],
+			[
+				"fromage",
+				"FromAgeMax"
+			],
+			[
+				"la",
+				"label_xflip"
+			],
+			[
+				"labl",
+				"labelstart_y"
+			],
+			[
+				"evt_",
+				"evt_callout_offset"
+			],
+			[
+				"features",
+				"feature_names\tlist"
+			],
+			[
+				"flo",
+				"float64\ttype"
+			],
+			[
+				"g",
+				"G_tgtplan"
+			],
+			[
+				"g_",
+				"G_tgtplan"
+			],
+			[
+				"x",
+				"x2"
+			],
+			[
+				"resiz",
+				"resizeDiv"
+			],
+			[
+				"generat",
+				"generation_mutation"
+			],
+			[
+				"grea",
+				"greatest_x"
+			],
+			[
+				"low",
+				"lowest_y"
+			],
+			[
+				"zones",
+				"zonestocheck"
+			],
+			[
+				"newNeuon",
+				"newNeuron_input"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.css",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:install package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packag",
+				"Preferences: Browse Packages"
+			],
+			[
+				"kite",
+				"Kite: Search"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Permute Lines: Unique"
+			]
+		],
+		"width": 492.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"package control",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Docs/Portfolio 2/Website Building/Stealth Ship V2/public/app.js",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/word_generator.js",
+		"/D/Docs/Portfolio 2/Website Building/lighspeed/app.js",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/content.js",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/index.html",
+		"/D/Docs/Portfolio 2/Website Building/lighspeed/index.html",
+		"/D/Docs/Portfolio 2/Website Building/Stealth Ship V2/app.js",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Client/index.html",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Compiler/app.js",
+		"/D/Docs/Portfolio 2/Website Building/Coding-Practice-test/server/controller.js",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Client/app.js",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Client/std_code.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp00828/airmanepic.com/missilegame/GameApp.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp04803/airmanepic.com/scheduleit/index.html",
+		"/C/Users/Powerful/AppData/Local/Temp/scp01056/airmanepic.com/missilegame/createApp.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp01545/airmanepic.com/missilegame/capturecurrent.php",
+		"/C/Users/Powerful/AppData/Local/Temp/scp59726/airmanepic.com/missilegame/game_play.php",
+		"/C/Users/Powerful/AppData/Local/Temp/scp58971/airmanepic.com/Mplay_belter/gamesapp.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp58447/airmanepic.com/Mplay_belter/app.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp57502/airmanepic.com/redgame/run.php",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Server/controller.js",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Server/server.js",
+		"/D/Docs/Portfolio 2/Website Building/SmashYourFriends/Server/server.js",
+		"/D/Docs/Portfolio 2/Website Building/SmashYourFriends/app.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp39757/root/connectus/campaign.csv",
+		"/D/Docs/Portfolio 2/Website Building/SmashYourFriends/package-unrendered.js",
+		"/D/Docs/Portfolio 2/Website Building/Vancian/Client/main.css",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/node_modules/pngjs/lib/chunkstream.js",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/node_modules/pngjs/lib/parser.js",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/App.js",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/inapp.js",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/imgColors.json",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/target.json",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/tags.json",
+		"/D/Docs/Portfolio 2/Inspiration/thing project/alltags.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/controller.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/notes",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/page_inventory.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/functions/basic_functions.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/page_trade.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/main.css",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Items/items.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Items/items.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Dialogues/interactions.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_person.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Combat/combat.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/gameapp.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/functions/old_gamefunctions.js",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/server.js",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/comic_pages/121.page",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/comic_pages/122.page",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/comic_pages/123.page",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/comic_pages/124.page",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/old_location_editor/app.js",
+		"/D/Docs/Portfolio 2/Website Building/Discordgame/credentials.json",
+		"/D/Docs/Portfolio 2/Website Building/Discordgame/server.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_location.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/game.html",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_D.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/status.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/status.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Status/status.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_status.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/page_combat.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/lochmaddy.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/conversationSpecial.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/statusEvents.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Disc.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/trait_data.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/interests.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/city_events.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/races.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/electron_app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/package-unrendered.js",
+		"/D/Docs/Portfolio 2/Website Building/Hubris/image_converter.js",
+		"/D/Docs/Portfolio 2/169 Homeworks/PrintedPython.py",
+		"/D/Docs/Portfolio 2/Website Building/Terrain maker/define_graph.js",
+		"/D/Docs/Portfolio 2/Website Building/Terrain maker/app.js",
+		"/C/Users/Powerful/Downloads/valid_op_model_1vol.json",
+		"/C/Users/Powerful/AppData/Local/Temp/Temp2_AJSSC-master.zip/AJSSC-master/app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/locpack.js",
+		"/C/Users/Powerful/AppData/Local/Temp/Temp2_AJSSC-master.zip/AJSSC-master/std_code.js",
+		"/C/Users/Powerful/AppData/Local/Temp/scp56256/slimetown/app.js",
+		"/C/Users/Powerful/AppData/Local/Temp/Temp1_AJSSC-master.zip/AJSSC-master/app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_common_affix.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/scratch notes.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/index.html",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Quests/lochmaddy.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Quests/hypatia.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Quests/questsHypatia.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Quests/lochmaddy.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/hypatia.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/eventsNybyen.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Dialogues/dialoguesCommon.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Dialogues/common.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/lochmaddy.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Quests/questsCommon.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/Nybyen.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_common.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Events/eventsHypatia.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/functions/misc_descriptions.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/functions/consts.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/functions/save_and_load.js",
+		"/D/Docs/Portfolio 2/Website Building/NNAIGG_electronversion/medley.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_camp.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/todo",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/readme.md",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/game.html",
+		"/D/Docs/Portfolio 2/Website Building/Accretion/accretion_app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/package.json",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/todo",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/readme.md",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/.gitignore",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/.git/config",
+		"/D/Docs/Portfolio 2/Website Building/Accretion/accretion.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS2/compiler.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS2/src/substructure/gameengine.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/myparser.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_party.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/names.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/townscraper.php",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/convert.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS2/src/app.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS2/chooser/chooser.js",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/index.html",
+		"/D/Docs/Portfolio 2/Website Building/RTSDS/names.js"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"image_fore",
+			"//",
+			"4-",
+			"4",
+			"light_spd",
+			"image_fore",
+			"crumb.pos",
+			"image_fore",
+			"/2",
+			"2",
+			"crumb.origin",
+			"\"",
+			"9091",
+			"public",
+			"/",
+			"no",
+			"text",
+			"error",
+			"names",
+			"namesep",
+			"jpeg",
+			".",
+			"x11",
+			"  ",
+			"names",
+			"files",
+			"filedata",
+			"filelist",
+			"[]\n",
+			"colors",
+			"\"",
+			"\t\t\t\n",
+			"52px",
+			"user",
+			"kiss",
+			"time",
+			"debugger",
+			"h2",
+			"name",
+			"i",
+			"6",
+			"gamestate.inv",
+			"255",
+			"120",
+			"itemName",
+			"Combat",
+			"Statuses",
+			"Event",
+			"movement_mode",
+			"SPACE",
+			"thisPos",
+			"unit.actualDest",
+			"dirOfMovement",
+			"unit.dest",
+			"drawPos",
+			"unit.pos",
+			"+TgtPlusY",
+			"+TgtPlusX",
+			"point",
+			"mp",
+			"mpAdjustX",
+			"mp",
+			"myUnit.pos",
+			".25",
+			"+0.5",
+			"0.2",
+			"unit",
+			"drawPos",
+			"largerRiver",
+			"inside",
+			"spread[i]",
+			"unit.pos",
+			"16",
+			"0",
+			"wings",
+			"minor",
+			"leaderImage",
+			"enemyBackImage",
+			"allyBackImage",
+			"bfMouse",
+			"db",
+			"wingsImage",
+			"actualPos",
+			"drawPos",
+			"tf2",
+			"wings",
+			"unitClass",
+			"floor",
+			"1*",
+			"0.5",
+			"-",
+			"-(.5*drawSize)",
+			"-(drawSize*16)",
+			"0",
+			"thisPos.x-(drawSize*16),thisPos.y-(drawSize*16)",
+			"drawsize",
+			"iconImage",
+			"trees",
+			"*3",
+			"count",
+			"absStarting",
+			"pointslist",
+			"smoothedPoints",
+			"*2",
+			"riverSides",
+			"0.01",
+			"5/(lutcount)",
+			"0.01",
+			"0",
+			"-dir",
+			"tf",
+			"river",
+			"rspred(.001)",
+			"rspred(0.001)",
+			"PointTwoT",
+			".P",
+			"P",
+			"pointList",
+			"pointOne",
+			"2",
+			"M",
+			"1",
+			"P",
+			"M2",
+			"P2",
+			"M1",
+			"P1",
+			".01"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"console",
+			"animate",
+			"context",
+			"object"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 138.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "youspot.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Docs\\Portfolio 2\\Website Building\\NeuralNetwork\\Backprop4.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Docs\\Portfolio 2\\Website Building\\Hubris\\Hubris website.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
