@@ -1,11 +1,5 @@
 name: Lint Javascript
-on: 
-    push:
-        branches:
-          - main
-    pull_request:
-        branches:
-          - main
+on: [push]
 jobs:
   Lint_JS:
     runs-on: ubuntu-latest
