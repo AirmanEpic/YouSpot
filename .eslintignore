@@ -4,3 +4,7 @@ node_modules
 jquery-2.1.4.min.js
 youspot.sublime-project
 youspot.sublime-workspace
+*.css
+*.html
+*.json
+*.md

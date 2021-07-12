@@ -17,6 +17,8 @@
     // "ignorePatterns":["node_modules/*"],
     "rules": {
         "no-var":"error",
-        "no-use-before-define":"error"
+        "max-len":0,
+        "valid-jsdoc":0,
+        "no-unused-vars":0
     }
 }
