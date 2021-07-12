@@ -1,0 +1,19 @@
+{
+  "name": "youspot",
+  "version": "0.1.0",
+  "description": "app to help with music",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AirmanEpic/YouSpot.git"
+  },
+  "author": "Airmanepic, Jbax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirmanEpic/YouSpot/issues"
+  },
+  "homepage": "https://github.com/AirmanEpic/YouSpot#readme"
+}
