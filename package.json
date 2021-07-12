@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AirmanEpic/YouSpot/issues"
   },
-  "homepage": "https://github.com/AirmanEpic/YouSpot#readme"
+  "homepage": "https://github.com/AirmanEpic/YouSpot#readme",
+  "dependencies": {
+    "eslint": "^7.30.0"
+  }
 }
