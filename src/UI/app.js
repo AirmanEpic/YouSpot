@@ -5,6 +5,7 @@ const ctx = {};
 function main() {
 }
 
+/** executes the resizediv function when the window is resized */
 window.onresize = function(event) {
   resizeDiv();
 };
