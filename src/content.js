@@ -2,7 +2,3 @@
 // This is seperate from the code that runs the UI inside the extension.
 
 const deliberatelybroke = true;
-
-chrome.browserAction.onClicked.addListener(function(tab) {
-    alert('working?');
-});
