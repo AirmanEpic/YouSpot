@@ -520,10 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "main.css",
+			"file": "manifest.json",
 			"settings":
 			{
-				"buffer_size": 23,
+				"buffer_size": 171,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/UI/app.js",
+			"settings":
+			{
+				"buffer_size": 482,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -664,10 +673,21 @@
 	},
 	"file_history":
 	[
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/.github/workflows/lint_js.yml",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/src/UI/main.css",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/src/UI/app.js",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/readme.md",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/.gitignore",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/.eslintrc.json",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/src/UI/std_code.js",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/.github/workflows/github-actions-demo.yml",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/.eslintignore",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/main.css",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/content.js",
+		"/D/Docs/Portfolio 2/Website Building/YouSpot/manifest.json",
 		"/D/Docs/Portfolio 2/Website Building/Stealth Ship V2/public/app.js",
 		"/D/Docs/Portfolio 2/Website Building/Hubris/word_generator.js",
 		"/D/Docs/Portfolio 2/Website Building/lighspeed/app.js",
-		"/D/Docs/Portfolio 2/Website Building/YouSpot/content.js",
 		"/D/Docs/Portfolio 2/Website Building/YouSpot/index.html",
 		"/D/Docs/Portfolio 2/Website Building/lighspeed/index.html",
 		"/D/Docs/Portfolio 2/Website Building/Stealth Ship V2/app.js",
@@ -780,18 +800,7 @@
 		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/compiler/readme.md",
 		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/.gitignore",
 		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/.git/config",
-		"/D/Docs/Portfolio 2/Website Building/Accretion/accretion.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS2/compiler.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS2/src/substructure/gameengine.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS/myparser.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Pages/pages_party.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS1.5/Assets/Data/names.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS/townscraper.php",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS/convert.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS2/src/app.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS2/chooser/chooser.js",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS/index.html",
-		"/D/Docs/Portfolio 2/Website Building/RTSDS/names.js"
+		"/D/Docs/Portfolio 2/Website Building/Accretion/accretion.js"
 	],
 	"find":
 	{
@@ -809,6 +818,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"clicked_lm",
+			"var",
 			"image_fore",
 			"//",
 			"4-",
@@ -934,9 +945,7 @@
 			"P",
 			"M2",
 			"P2",
-			"M1",
-			"P1",
-			".01"
+			"M1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -963,36 +972,60 @@
 			[
 				{
 					"buffer": 0,
-					"file": "main.css",
+					"file": "manifest.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 171,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								41,
+								41
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 4,
-								"tabSize": 4
-							}
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/UI/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
