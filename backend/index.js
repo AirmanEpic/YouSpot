@@ -44,7 +44,11 @@ exports.handler = async (event, context) => {
     statusCode = '400';
     body = err.message;
   } finally {
-    body = JSON.stringify(body);
+    try {
+      body = JSON.stringify(body);
+    } catch {
+      body = "There was an issue converting the error message to a string";
+    }
   }
 
   return {
