@@ -47,7 +47,7 @@ exports.handler = async (event, context) => {
     try {
       body = JSON.stringify(body);
     } catch (exception) {
-      body = "There was an issue converting the error message to a string";
+      body = 'There was an issue converting the error message to a string';
     }
   }
 
