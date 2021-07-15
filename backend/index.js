@@ -20,7 +20,7 @@ exports.handler = async (event, context) => {
   const body = 'pepperoni pizza\n';
   const statusCode = '200';
   const headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'text/plain',
   };
 
   /*
