@@ -23,6 +23,7 @@ exports.handler = async (event, context) => {
     'Content-Type': 'application/json',
   };
 
+/*
   try {
     switch (event.httpMethod) {
       case 'DELETE':
@@ -50,7 +51,8 @@ exports.handler = async (event, context) => {
       body = 'There was an issue converting the error message to a string';
     }
   }
-
+*/
+  body = "pepperoni pizza";
   return {
     statusCode,
     body,
