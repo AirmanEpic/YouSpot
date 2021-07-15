@@ -1,7 +1,7 @@
 name: deploy to lambda
 on: 
   push:
-    branches: [main, Dev-Airman, Dev-Airman2, Dev-Mercerenies]
+    branches: [main, Dev-Airman, Dev-Airman2]
 jobs:
   deploy_source:
     name: build and deploy lambda
@@ -28,12 +28,12 @@ jobs:
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
-          args: zip -qq -r -j ./bundle.zip ./backend
+          args: zip -qq -r ./bundle.zip ./backend/index.js
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_region: us-east-2
+          aws_region: us-east-1
           function_name: YouSpot
           zip_file: bundle.zip
