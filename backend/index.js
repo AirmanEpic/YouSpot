@@ -16,6 +16,7 @@ exports.handler = async (event, context) => {
   // console.log('Received event:', JSON.stringify(event, null, 2));
 
   // HEY! I WAS UPDATED!!! YAY!!!
+  // #SECRET_A
 
   const body = 'pepperoni pizza\n';
   const statusCode = '200';
