@@ -17,7 +17,7 @@ exports.handler = async (event, context) => {
 
   // HEY! I WAS UPDATED!!! YAY!!!
 
-  const body = 'pepperoni pizza\n'
+  const body = 'pepperoni pizza\n';
   const statusCode = '200';
   const headers = {
     'Content-Type': 'application/json',
