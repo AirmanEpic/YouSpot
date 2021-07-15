@@ -18,12 +18,13 @@ exports.handler = async (event, context) => {
   // HEY! I WAS UPDATED!!! YAY!!!
   // #SECRET_A
 
-  let body;
-  let statusCode = '200';
+  const body = 'pepperoni pizza\n';
+  const statusCode = '200';
   const headers = {
     'Content-Type': 'application/json',
   };
 
+  /*
   try {
     switch (event.httpMethod) {
       case 'DELETE':
@@ -51,7 +52,7 @@ exports.handler = async (event, context) => {
       body = 'There was an issue converting the error message to a string';
     }
   }
-
+  */
   return {
     statusCode,
     body,

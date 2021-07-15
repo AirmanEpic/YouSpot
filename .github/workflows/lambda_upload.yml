@@ -1,7 +1,7 @@
 name: deploy to lambda
 on: 
   push:
-    branches: [main, Dev-Airman, Dev-Airman2]
+    branches: [main, Dev-Airman, Dev-Airman2, Dev-Mercerenies]
 jobs:
   deploy_source:
     name: build and deploy lambda
@@ -28,7 +28,7 @@ jobs:
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
-          args: zip -qq -r ./bundle.zip ./backend/index.js
+          args: zip -qq -r -j ./bundle.zip ./backend
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
