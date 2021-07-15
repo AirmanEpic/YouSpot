@@ -17,7 +17,7 @@ exports.handler = async (event, context) => {
 
   // HEY! I WAS UPDATED!!! YAY!!!
 
-  const body;
+  const body = 'pepperoni pizza\n'
   const statusCode = '200';
   const headers = {
     'Content-Type': 'application/json',
@@ -52,7 +52,6 @@ exports.handler = async (event, context) => {
     }
   }
   */
-  body = 'pepperoni pizza';
   return {
     statusCode,
     body,
