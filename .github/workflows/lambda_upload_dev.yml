@@ -21,6 +21,10 @@ jobs:
           npm run build --if-present
         env:
           CI: true
+      - name: replace secrets
+        run: node secret_replacer.js ${{ secrets.MY_DUMB_SECRET}}
+        env:
+          CI: true
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
