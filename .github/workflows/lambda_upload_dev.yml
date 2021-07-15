@@ -1,7 +1,7 @@
-name: deploy to lambda
+name: deploy to lambda (dev)
 on:
   push:
-    branches: [main]
+    branches: [dev]
 jobs:
   deploy_source:
     name: build and deploy lambda
@@ -21,10 +21,6 @@ jobs:
           npm run build --if-present
         env:
           CI: true
-      - name: replace secrets
-        run: node secret_replacer.js ${{ secrets.MY_DUMB_SECRET}}
-        env:
-          CI: true
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
@@ -32,8 +28,8 @@ jobs:
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
           aws_region: us-east-2
           function_name: YouSpot
           zip_file: bundle.zip
