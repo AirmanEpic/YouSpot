@@ -32,5 +32,5 @@ exports.runTests = function(branch) {
   console.log('Starting tests, waiting 60 seconds to allow lambda upload');
   setTimeout(()=>{
     runTestsDelayed(branch);
-  }, 6000);
+  }, 60000);
 };
