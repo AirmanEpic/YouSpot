@@ -12,5 +12,8 @@
 	],
 	"browser_action": {
 	    "default_popup": "src/UI/index.html"
-	}
+	},
+	"permissions": [
+		"https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/*"
+	]
 }

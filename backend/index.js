@@ -2,6 +2,49 @@ const AWS = require('aws-sdk');
 
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
+/** Endpoint: returns song recommendations */
+findSong = function(data) {
+  return ['pepperoni pizza\n', 200];
+};
+
+/** Endpoint: simply returns "healthy" as a basic server health check. */
+healthCheck = function(data) {
+  return ['Healthy!', 200];
+};
+
+const endpoints = ['requestSongRecommendations', 'heartbeat'];
+
+const endpointFunctions = {
+  requestSongRecommendations: findSong,
+  heartbeat: healthCheck,
+};
+
+/** Endpoint parser: parses and routes the endpoint to the correct function */
+router = function(data) {
+  if (!data.endpoint) {
+    return [`error: no endpoint data received. Got: ${data}`, 403];
+  }
+
+  // validate the endpoint against a real list of endpoints.
+  const endpointIndex = endpoints.indexOf(data.endpoint);
+  if (endpointIndex == -1) {
+    return ['error: endpoint not found', 403];
+  }
+
+  // this is an effort to prevent eval injection attacks.
+  const safeEndpointName = endpoints[endpointIndex];
+
+  // if the endpoint is in our acceptable list, the return statement will not execute and we'll make it to the very end.
+  if (!endpointFunctions[safeEndpointName]) {
+    return ['error: endpoint invalid', 403];
+  }
+
+
+  // since we know the endpoint exists, we can safely execute it and return the result.
+  return endpointFunctions[safeEndpointName](data);
+};
+
+
 /**
  * Demonstrates a simple HTTP endpoint using API Gateway. You have full
  * access to the request and response payload, including headers and
@@ -16,33 +59,38 @@ exports.handler = async (event, context) => {
   // console.log('Received event:', JSON.stringify(event, null, 2));
 
   // HEY! I WAS UPDATED!!! YAY!!!
+  // #SECRET_A
 
-  let body;
+  let body = 'pepperoni pizza\n';
   let statusCode = '200';
   const headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'text/plain',
   };
 
   try {
-    switch (event.httpMethod) {
-      case 'DELETE':
-        body = await dynamo.delete(JSON.parse(event.body)).promise();
-        break;
-      case 'GET':
-        body = await dynamo.scan({TableName: event.queryStringParameters.TableName}).promise();
-        break;
-      case 'POST':
-        body = await dynamo.put(JSON.parse(event.body)).promise();
-        break;
-      case 'PUT':
-        body = await dynamo.update(JSON.parse(event.body)).promise();
-        break;
-      default:
-        throw new Error(`Unsupported method "${event.httpMethod}"`);
+    // switch (event.httpMethod) {
+    //   case 'DELETE':
+    //     body = await dynamo.delete(JSON.parse(event.body)).promise();
+    //     break;
+    //   case 'GET':
+    //     body = await dynamo.scan({TableName: event.queryStringParameters.TableName}).promise();
+    //     break;
+    //   case 'POST':
+    //     body = await dynamo.put(JSON.parse(event.body)).promise();
+    //     break;
+    //   case 'PUT':
+    //     body = await dynamo.update(JSON.parse(event.body)).promise();
+    //     break;
+    //   default:
+    //     throw new Error(`Unsupported method "${event.httpMethod}"`);
+    // }
+    const recData = JSON.parse(event.body);
+    if (recData) {
+      [body, statusCode] = router(recData);
     }
   } catch (err) {
     statusCode = '400';
-    body = err.message;
+    body = err.message+' on line ' +err.lineNumber + '\n StackTrace: ' + err.stack;
   } finally {
     try {
       body = JSON.stringify(body);
@@ -57,3 +105,4 @@ exports.handler = async (event, context) => {
     headers,
   };
 };
+
