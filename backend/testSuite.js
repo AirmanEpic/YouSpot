@@ -24,7 +24,7 @@ exports.testSuite = [
 exports.pingAPI = async function(branch, endpoint, argus) {
   const {body} = await got.post(branch.url,
       {
-        responseType: 'text',
+        responseType: 'json',
         json: {endpoint: endpoint, args: argus},
         headers: {
           'x-api-key': branch.key,
