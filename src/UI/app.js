@@ -9,16 +9,16 @@ function main() {
     type: 'post',
     dataType: 'html',
     data: {
-       // body stuff here, not needed
+      // body stuff here, not needed
     },
     headers: {
-        'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
+      'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
     },
-    success: function (data) {
+    success: function(data) {
       console.log('POST success!');
       console.log(data);
     },
-    error: function (data) {
+    error: function(data) {
       console.log('POST error!');
       console.log(data);
     },
