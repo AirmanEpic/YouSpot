@@ -16,17 +16,17 @@ router = function(data) {
   if (endpointIndex != -1) {
     return endpointFunctions[data.endpoint](data);
   }
-}
+};
 
 /** Endpoint: returns song recommendations */
 findSong = function(data) {
   return ['pepperoni pizza\n', 200];
-}
+};
 
 /** Endpoint: simply returns "healthy" as a basic server health check. */
 healthCheck = function(data) {
   return ['Healthy!', 200];
-}
+};
 
 
 const endpoints = ['requestSongReccomendations', 'heartbeat'];
