@@ -1,6 +1,6 @@
 const {testSuite} = require('./testSuite.js');
 
-exports.runTests = async function(branch) {
+const runTestsDelayed = async function(branch) {
   let allPassing = true;
   for (const test of testSuite) {
     const res = await test.test(branch);
@@ -21,3 +21,10 @@ exports.runTests = async function(branch) {
     process.exit(2);
   }
 };
+
+exports.runTests = function(branch){
+  console.log("Starting tests, waiting 60 seconds to allow lambda upload")
+  setTimeout(()=>{
+    runTestsDelayed(branch)
+  },60000)
+}
