@@ -54,7 +54,7 @@ exports.handler = async (event, context) => {
 
   let body = 'pepperoni pizza\n';
   let statusCode = '200';
-  let headers = {
+  const headers = {
     'Content-Type': 'text/plain',
   };
 
@@ -81,7 +81,7 @@ exports.handler = async (event, context) => {
     }
   } catch (err) {
     statusCode = '400';
-    body = err.message+" on line " +err.lineNumber + "\n StackTrace: " + err.stack;
+    body = err.message+' on line ' +err.lineNumber + '\n StackTrace: ' + err.stack;
   } finally {
     try {
       body = JSON.stringify(body);
