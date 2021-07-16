@@ -12,7 +12,7 @@ exports.testSuite = [
     name: 'Basic Health',
     error: 'Server is responding improperly to basic health check.',
     test: async function(branch) {
-      return await pingAPI(branch, 'heartbeat', {});
+      return await exports.pingAPI(branch, 'heartbeat', {});
     },
     expects: 'Healthy!',
     breaking: true,
@@ -21,10 +21,10 @@ exports.testSuite = [
 ];
 
 /** Simple API ping command. Should simply return the response of the ping.*/
-pingAPI = async function(branch, endpoint, argus) {
+exports.pingAPI = async function(branch, endpoint, argus) {
   const {body} = await got.post(branch.url,
       {
-        responseType: 'json',
+        responseType: 'text',
         json: {endpoint: endpoint, args: argus},
         headers: {
           'x-api-key': branch.key,
