@@ -75,7 +75,7 @@ exports.handler = async (event, context) => {
     //   default:
     //     throw new Error(`Unsupported method "${event.httpMethod}"`);
     // }
-    const recData = event.body;
+    const recData = JSON.parse(event.body);
     if (recData) {
       [body, statusCode] = router(recData);
     }
