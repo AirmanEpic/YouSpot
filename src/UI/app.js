@@ -21,10 +21,6 @@ function main() {
     error: function (data) {
       console.log('POST error!');
       console.log(data);
-    },
-    fail: function (data) {
-      console.log('POST fail!');
-      console.log(data);
     }
   });
 }

@@ -8,3 +8,5 @@ youspot.sublime-workspace
 *.html
 *.json
 *.md
+package-unrendered.js
+package.js
