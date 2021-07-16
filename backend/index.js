@@ -52,9 +52,9 @@ exports.handler = async (event, context) => {
   // HEY! I WAS UPDATED!!! YAY!!!
   // #SECRET_A
 
-  const body = 'pepperoni pizza\n';
-  const statusCode = '200';
-  const headers = {
+  let body = 'pepperoni pizza\n';
+  let statusCode = '200';
+  let headers = {
     'Content-Type': 'text/plain',
   };
 
