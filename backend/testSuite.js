@@ -14,7 +14,7 @@ exports.testSuite = [
     test: async function(branch) {
       return await pingAPI(branch, 'heartbeat', {});
     },
-    expects: 'healthy!',
+    expects: 'Healthy!',
     breaking: true,
   },
 
