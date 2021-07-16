@@ -12,8 +12,10 @@ healthCheck = function(data) {
   return ['Healthy!', 200];
 };
 
+const endpoints = ['requestSongRecommendations', 'heartbeat'];
+
 const endpointFunctions = {
-  requestSongReccomendations: findSong,
+  requestSongRecommendations: findSong,
   heartbeat: healthCheck,
 };
 
@@ -23,14 +25,23 @@ router = function(data) {
     return [`error: no endpoint data received. Got: ${data}`, 403];
   }
 
-  // if the endpoint is in our acceptable list, the return statement will not execute and we'll make it to the very end.
-  if (!endpointFunctions[data.endpoint]) {
+  // validate the endpoint against a real list of endpoints.
+  const endpointIndex = endpoints.indexOf(data.endpoint);
+  if (endpointIndex == -1) {
     return ['error: endpoint not found', 403];
+  }
+
+  // this is an effort to prevent eval injection attacks.
+  const safeEndpointName = endpoints[endpointIndex];
+
+  // if the endpoint is in our acceptable list, the return statement will not execute and we'll make it to the very end.
+  if (!endpointFunctions[safeEndpointName]) {
+    return ['error: endpoint invalid', 403];
   }
 
 
   // since we know the endpoint exists, we can safely execute it and return the result.
-  return endpointFunctions[data.endpoint](data);
+  return endpointFunctions[safeEndpointName](data);
 };
 
 
