@@ -23,13 +23,13 @@ router = function(data) {
     return [`error: no endpoint data received. Got: ${data}`, 403];
   }
 
-  //if the endpoint is in our acceptable list, the return statement will not execute and we'll make it to the very end.
+  // if the endpoint is in our acceptable list, the return statement will not execute and we'll make it to the very end.
   if (!endpointFunctions[data.endpoint]) {
     return ['error: endpoint not found', 403];
   }
 
-  
-  //since we know the endpoint exists, we can safely execute it and return the result.
+
+  // since we know the endpoint exists, we can safely execute it and return the result.
   return endpointFunctions[data.endpoint](data);
 };
 
