@@ -2,6 +2,33 @@ const AWS = require('aws-sdk');
 
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
+/** Endpoint parser: parses and routes the endpoint to the correct function */
+router = function(data) {
+  if (!data.endpoint) {
+    return ['error: no endpoint data received', 403];
+  }
+
+  const endpointIndex = endpoints.indexOf(data.endpoint);
+  if (endpointIndex == -1) {
+    return ['error: endpoint not found', 403];
+  }
+
+  if (endpointIndex != -1) {
+    return endpointFunctions[data.endpoint](data);
+  }
+}
+
+/** Endpoint: returns song recommendations */
+findSong = function(data) {
+  return ['pepperoni pizza\n', 200];
+}
+
+/** Endpoint: simply returns "healthy" as a basic server health check. */
+healthCheck = function(data) {
+  return ['Healthy!', 200];
+}
+
+
 const endpoints = ['requestSongReccomendations', 'heartbeat'];
 const endpointFunctions = {
   requestSongReccomendations: findSong,
@@ -69,28 +96,3 @@ exports.handler = async (event, context) => {
   };
 };
 
-/** Endpoint parser: parses and routes the endpoint to the correct function */
-function router(data) {
-  if (!data.endpoint) {
-    return ['error: no endpoint data received', 403];
-  }
-
-  const endpointIndex = endpoints.indexOf(data.endpoint);
-  if (endpointIndex == -1) {
-    return ['error: endpoint not found', 403];
-  }
-
-  if (endpointIndex != -1) {
-    return endpointFunctions[data.endpoint](data);
-  }
-}
-
-/** Endpoint: returns song recommendations */
-function findSong(data) {
-  return ['pepperoni pizza\n', 200];
-}
-
-/** Endpoint: simply returns "healthy" as a basic server health check. */
-function healthCheck(data) {
-  return ['Healthy!', 200];
-}
