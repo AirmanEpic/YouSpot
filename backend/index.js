@@ -4,9 +4,9 @@ const dynamo = new AWS.DynamoDB.DocumentClient();
 
 const endpoints = ['requestSongReccomendations', 'heartbeat'];
 const endpointFunctions = {
-  requestSongReccomendations:findSong,
-  heartbeat:healthCheck
-}
+  requestSongReccomendations: findSong,
+  heartbeat: healthCheck,
+};
 
 /**
  * Demonstrates a simple HTTP endpoint using API Gateway. You have full
@@ -75,20 +75,22 @@ function router(data) {
     return ['error: no endpoint data received', 403];
   }
 
-  let endpointIndex = endpoints.indexOf(data.endpoint)
+  const endpointIndex = endpoints.indexOf(data.endpoint);
   if (endpointIndex == -1) {
     return ['error: endpoint not found', 403];
   }
 
-  if (endpointIndex != -1){
-    return endpointFunctions[data.endpoint](data)
+  if (endpointIndex != -1) {
+    return endpointFunctions[data.endpoint](data);
   }
 }
 
-function findSong(data){
-  return ['pepperoni pizza\n', 200]
+/** Endpoint: returns song recommendations */
+function findSong(data) {
+  return ['pepperoni pizza\n', 200];
 }
 
-function healthCheck(data){
-  return ['Healthy!', 200]
+/** Endpoint: simply returns "healthy" as a basic server health check. */
+function healthCheck(data) {
+  return ['Healthy!', 200];
 }
