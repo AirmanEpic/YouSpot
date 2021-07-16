@@ -3,16 +3,16 @@ const ctx = {};
 
 /** main function, executes click event bindings and so forth. */
 function main() {
-  //This POST is run on execution - It records the response given by the server, if any.
+  // This POST is run on execution - It records the response given by the server, if any.
   $.ajax({
     url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot/',
     type: 'post',
     dataType: 'html',
     data: {
-       //body stuff here, not needed
+       // body stuff here, not needed
     },
     headers: {
-        'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39', 
+        'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
     },
     success: function (data) {
       console.log('POST success!');
@@ -21,7 +21,7 @@ function main() {
     error: function (data) {
       console.log('POST error!');
       console.log(data);
-    }
+    },
   });
 }
 
