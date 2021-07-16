@@ -2,22 +2,6 @@ const AWS = require('aws-sdk');
 
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
-/** Endpoint parser: parses and routes the endpoint to the correct function */
-router = function(data) {
-  if (!data.endpoint) {
-    return ['error: no endpoint data received', 403];
-  }
-
-  const endpointIndex = endpoints.indexOf(data.endpoint);
-  if (endpointIndex == -1) {
-    return ['error: endpoint not found', 403];
-  }
-
-  if (endpointIndex != -1) {
-    return endpointFunctions[data.endpoint](data);
-  }
-};
-
 /** Endpoint: returns song recommendations */
 findSong = function(data) {
   return ['pepperoni pizza\n', 200];
@@ -34,6 +18,23 @@ const endpointFunctions = {
   requestSongReccomendations: findSong,
   heartbeat: healthCheck,
 };
+
+/** Endpoint parser: parses and routes the endpoint to the correct function */
+router = function(data) {
+  if (!data.endpoint) {
+    return ['error: no endpoint data received', 403];
+  }
+
+  const endpointIndex = endpoints.indexOf(data.endpoint);
+  if (endpointIndex == -1) {
+    return ['error: endpoint not found', 403];
+  }
+
+  if (endpointIndex != -1) {
+    return endpointFunctions[data.endpoint](data);
+  }
+};
+
 
 /**
  * Demonstrates a simple HTTP endpoint using API Gateway. You have full
