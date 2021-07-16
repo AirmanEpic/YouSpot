@@ -22,7 +22,7 @@ const endpointFunctions = {
 /** Endpoint parser: parses and routes the endpoint to the correct function */
 router = function(data) {
   if (!data.endpoint) {
-    return ['error: no endpoint data received', 403];
+    return [`error: no endpoint data received. Got: ${data}`, 403];
   }
 
   const endpointIndex = endpoints.indexOf(data.endpoint);
