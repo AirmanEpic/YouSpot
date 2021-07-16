@@ -2,14 +2,14 @@
 // This is seperate from the code that runs the UI inside the extension.
 const deliberatelybroke = true;
 
-var videoTags = $("meta[name='keywords']").attr('content');
-var videoTitle = $("meta[name='title']").attr('content').toLowerCase();
-var videoDesc = $("meta[name='description']").attr('content');
-var isMusic;
+let videoTags = $("meta[name='keywords']").attr('content').toLowerCase();
+let videoTitle = $("meta[name='title']").attr('content').toLowerCase();
+let videoDesc = $("meta[name='description']").attr('content').toLowerCase();
+let isMusic;
 
-for (let i = 0; i < 3; i++)
-{
-    switch (i) {
+for (let i = 0; i < 3; i++) {
+    switch (i) 
+    {
         case 0:
             if (videoTags.split("music").length!=1) 
             { 
