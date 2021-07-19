@@ -2,30 +2,16 @@
 // This is seperate from the code that runs the UI inside the extension.
 const deliberatelybroke = true;
 
+//Pull Video Tags, Video Title, and Video Description from Youtube meta elements
 const videoTags = $('meta[name=\'keywords\']').attr('content').toLowerCase();
 const videoTitle = $('meta[name=\'title\']').attr('content').toLowerCase();
 const videoDesc = $('meta[name=\'description\']').attr('content').toLowerCase();
-let isMusic;
 
-for (let i = 0; i < 3; i++) {
-  switch (i) {
-    case 0:
-      if (videoTags.split('music').length!=1) {
-        isMusic = true; i = 3;
-      }
-      break;
-    case 1:
-      if (videoTitle.split('music').length!=1) {
-        isMusic = true; i = 3;
-      }
-      break;
-    case 2:
-      if (videoDesc.split('music').length!=1) {
-        isMusic = true;
-      } else {
-        isMusic = false;
-      };
-      break;
-  }
-}
-console.log('is music = ' + isMusic);
+//Check Tags, the title, and the video description for the word "music".
+//If any check comes back true, the function returns true, otherwise it returns false.
+function isMusic() {
+    if (videoTags.split('music').length!=1) {return true};
+    if (videoTitle.split('music').length!=1) {return true};
+    if (videoDesc.split('music').length!=1) {return true};
+    return false;
+};
