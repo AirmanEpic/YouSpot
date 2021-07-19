@@ -7,7 +7,7 @@ const videoTags = $('meta[name=\'keywords\']').attr('content').toLowerCase();
 const videoTitle = $('meta[name=\'title\']').attr('content').toLowerCase();
 const videoDesc = $('meta[name=\'description\']').attr('content').toLowerCase();
 
-/* Check Tags, the title, and the video description for the word "music".
+/** Check Tags, the title, and the video description for the word "music".
  If any check comes back true, the function returns true, otherwise it returns false. */
 function isMusic() {
   if (videoTags.split('music').length!=1) {
