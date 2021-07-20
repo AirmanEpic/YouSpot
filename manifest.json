@@ -7,7 +7,7 @@
 			"matches":[
 				"https://www.youtube.com/*"
 			],
-			"js":["src/content.js"]
+			"js":["src/UI/jquery-2.1.4.min.js", "src/content.js"]
 		}
 	],
 	"browser_action": {
