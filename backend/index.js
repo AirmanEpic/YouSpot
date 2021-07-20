@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk');
-
+const socket = require('socket.io')
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
 /** Endpoint: returns song recommendations */
