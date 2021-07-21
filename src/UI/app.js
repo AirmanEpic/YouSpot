@@ -5,21 +5,22 @@ const ctx = {};
 function main() {
   // This POST is run on execution - It records the response given by the server, if any.
   $.ajax({
-    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot/',
+    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot/findSong',
     type: 'post',
     dataType: 'html',
     data: {
-      // body stuff here, not needed
+      query: 'never gonna give you up',
     },
     headers: {
       'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
+      'content-type': 'application/json',
     },
     success: function(data) {
-      console.log('POST success!');
+      console.log('Success!');
       console.log(data);
     },
     error: function(data) {
-      console.log('POST error!');
+      console.log('Error!');
       console.log(data);
     },
   });

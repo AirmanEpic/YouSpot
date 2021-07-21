@@ -1,20 +1,51 @@
 const AWS = require('aws-sdk');
+var needle = require('needle');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
-/** Endpoint: returns song recommendations */
-findSong = function(data) {
-  return ['pepperoni pizza\n', 200];
-};
-
-/** Endpoint: simply returns "healthy" as a basic server health check. */
+/* Endpoints */
+/** healthCheck: Simply returns "healthy" as a basic server health check. */
 healthCheck = function(data) {
   return ['Healthy!', 200];
 };
+/** findSong: Searches for song in the Spotify API. */
+/* Parameters:
+ * query(string): What the user is searching
+ * type(string): Album, artist, playlist, track, show, or episode
+ * OPTIONAL - market(string): Localization. Default is US
+ * OPTIONAL - limit(int): How many entries to return. Default is 1
+ */
+/* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
+findSong = function(data) {
+  //build our API string
+  var base_url = 'https://api.spotify.com/v1/search?q=';
+  var query = data.query;
+  var type = data.type;
+  var built_url = (base_url + query + '&type=' + type).replace(' ', '%20');
+  //API call
+  var options = {
+    headers: {
+      'content-type': 'application/json',
+      'authorization': 'Bearer BQAGw3MEt46ILH1rqAwnwPyFnugROjI3hwaPD9sJX_RywsvsNQ7nodr7UXzTp617eZdpn5fxMTg3NZLF-KkN1bIGKOg_gmaAPxeXdi3X8CbknvnCRPPvXagbDeoFCjwE8S0vakqJq9BZoK1LuqM',
+    },
+  };
+  needle.request('get', built_url, options, function(error, response) {
+  if (!error && response.statusCode == 200) {
+    return response.body;
+  } else {
+    return error.message;
+  }});
+};
 
-const endpoints = ['requestSongRecommendations', 'heartbeat'];
+/** getRecommendations: Given a Spotify song ID, returns Spotify recommendations*/
+getRecommendations = function(data) {
+  return "Not implemented";
+};
+
+const endpoints = ['findSong', 'getRecommendations', 'heartbeat'];
 
 const endpointFunctions = {
-  requestSongRecommendations: findSong,
+  findSong: findSong,
+  getRecommendations: getRecommendations,
   heartbeat: healthCheck,
 };
 
