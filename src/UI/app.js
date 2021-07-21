@@ -10,6 +10,7 @@ function main() {
     dataType: 'html',
     data: {
       query: 'never gonna give you up',
+      type: 'track',
     },
     headers: {
       'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
