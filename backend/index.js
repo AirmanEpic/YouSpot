@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk');
-var needle = require('needle');
+const needle = require('needle');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
 /* Endpoints */
@@ -16,24 +16,25 @@ healthCheck = function(data) {
  */
 /* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
 findSong = function(data) {
-  //build our API string
-  var base_url = 'https://api.spotify.com/v1/search?q=';
-  var query = data.query;
-  var type = data.type;
-  var built_url = (base_url + query + '&type=' + type).replace(' ', '%20');
-  //API call
-  var options = {
+  // build our API string
+  const base_url = 'https://api.spotify.com/v1/search?q=';
+  const query = data.query;
+  const type = data.type;
+  const built_url = (base_url + query + '&type=' + type).replace(' ', '%20');
+  // API call
+  const options = {
     headers: {
       'content-type': 'application/json',
       'authorization': 'Bearer BQAGw3MEt46ILH1rqAwnwPyFnugROjI3hwaPD9sJX_RywsvsNQ7nodr7UXzTp617eZdpn5fxMTg3NZLF-KkN1bIGKOg_gmaAPxeXdi3X8CbknvnCRPPvXagbDeoFCjwE8S0vakqJq9BZoK1LuqM',
     },
   };
   needle.request('get', built_url, options, function(error, response) {
-  if (!error && response.statusCode == 200) {
-    return response.body;
-  } else {
-    return error.message;
-  }});
+    if (!error && response.statusCode == 200) {
+      return response.body;
+    } else {
+      return error.message;
+    }
+  });
 };
 
 /** getRecommendations: Given a Spotify song ID, returns Spotify recommendations*/
