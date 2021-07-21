@@ -17,10 +17,10 @@ healthCheck = function(data) {
 /* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
 findSong = function(data) {
   // build our API string
-  const base_url = 'https://api.spotify.com/v1/search?q=';
+  const baseUrl = 'https://api.spotify.com/v1/search?q=';
   const query = data.query;
   const type = data.type;
-  const built_url = (base_url + query + '&type=' + type).replace(' ', '%20');
+  const builtUrl = (baseUrl + query + '&type=' + type).replace(' ', '%20');
   // API call
   const options = {
     headers: {
@@ -28,7 +28,7 @@ findSong = function(data) {
       'authorization': 'Bearer BQAGw3MEt46ILH1rqAwnwPyFnugROjI3hwaPD9sJX_RywsvsNQ7nodr7UXzTp617eZdpn5fxMTg3NZLF-KkN1bIGKOg_gmaAPxeXdi3X8CbknvnCRPPvXagbDeoFCjwE8S0vakqJq9BZoK1LuqM',
     },
   };
-  needle.request('get', built_url, options, function(error, response) {
+  needle.request('get', builtUrl, options, function(error, response) {
     if (!error && response.statusCode == 200) {
       return response.body;
     } else {
@@ -39,7 +39,7 @@ findSong = function(data) {
 
 /** getRecommendations: Given a Spotify song ID, returns Spotify recommendations*/
 getRecommendations = function(data) {
-  return "Not implemented";
+  return 'Not implemented';
 };
 
 const endpoints = ['findSong', 'getRecommendations', 'heartbeat'];
