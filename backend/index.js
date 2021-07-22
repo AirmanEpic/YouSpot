@@ -5,7 +5,7 @@ const dynamo = new AWS.DynamoDB.DocumentClient();
 /* Endpoints */
 /** healthCheck: Simply returns "healthy" as a basic server health check. */
 healthCheck = function(data) {
-  return ['Healthy!', 200];
+  return ['Healthy! asdf', 200];
 };
 /** findSong: Searches for song in the Spotify API. */
 /* Parameters:
@@ -16,6 +16,7 @@ healthCheck = function(data) {
  */
 /* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
 findSong = function(data) {
+  //needs input cleaning
   const query = data.query;
   const type = data.type;
   const market = data.market;
