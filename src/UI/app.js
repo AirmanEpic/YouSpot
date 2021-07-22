@@ -5,12 +5,11 @@ const ctx = {};
 function main() {
   // This POST is run on execution - It records the response given by the server, if any.
   $.ajax({
-    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot/findSong',
+    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot',
     type: 'post',
     dataType: 'html',
     data: {
-      query: 'never gonna give you up',
-      type: 'track',
+      endpoint: 'heartbeat',
     },
     headers: {
       'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
