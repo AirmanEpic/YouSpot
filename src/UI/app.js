@@ -1,17 +1,25 @@
 mpos = {x: 0, y: 0};
 const ctx = {};
 
+const query = 'hello';
+const type = 'track';
+const market = 'US';
+const limit = '1';
+
 /** main function, executes click event bindings and so forth. */
 function main() {
   // This POST is run on execution - It records the response given by the server, if any.
   $.ajax({
-    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot/findSong',
-    type: 'post',
+    url: 'https://ndwr1ks2f9.execute-api.us-east-2.amazonaws.com/default/YouSpot',
     dataType: 'html',
-    data: {
-      query: 'never gonna give you up',
-      type: 'track',
-    },
+    type: 'post',
+    data: JSON.stringify({
+      endpoint: 'findSong',
+      query: query,
+      type: type,
+      market: market,
+      limit: limit,
+    }),
     headers: {
       'x-api-key': 'GgmDMVSvcm5XpGCbHsZHhXwzQT6DYyS5S9SXrw39',
       'content-type': 'application/json',
