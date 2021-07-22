@@ -1,20 +1,59 @@
 const AWS = require('aws-sdk');
+const https = require('https');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
-/** Endpoint: returns song recommendations */
-findSong = function(data) {
-  return ['pepperoni pizza\n', 200];
-};
-
-/** Endpoint: simply returns "healthy" as a basic server health check. */
+/* Endpoints */
+/** healthCheck: Simply returns "healthy" as a basic server health check. */
 healthCheck = function(data) {
-  return ['Healthy!', 200];
+  return ['Healthy! asdf', 200];
+};
+/** findSong: Searches for song in the Spotify API. */
+/* Parameters:
+ * query  (string):             What the user is searching
+ * type   (string):             Album, artist, playlist, track, show, or episode
+ * market (string): (optional)  Localization. Default is US
+ * limit  (int):    (optional)  How many entries to return. Default is 1
+ */
+/* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
+findSong = function(data) {
+  //needs input cleaning
+  const query = data.query;
+  const type = data.type;
+  const market = data.market;
+  const limit = data.limit;
+
+  const options = {
+    hostname: 'api.spotify.com',
+    port: 443,
+    path: ('/v1/search?q=' + query + '&type=' + type + '&market=' + market + '&limit=' + limit).replace(' ', '%20'),
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer BQAOm4p3Wf-d6ZbMH0cwu7gDST6Kxcg_KEYoroxwHKSb7MWyz5nA9UDuv6Dc3hIozKZyDbtjVL0m3g1v26Oc3Dpc_xgbCyS-G_QHzo_n1w8CTk_P1LyDQTogA6kXKrfpeUFhP139aoWmaxnHQlg',
+    },
+  };
+  
+  const req = https.request(options, (res) => {
+    res.on('data', (d) => {
+      process.stdout.write(d);
+    });
+  });
+  
+  req.on('error', (e) => {
+    console.error(e);
+  });
+  req.end();
 };
 
-const endpoints = ['requestSongRecommendations', 'heartbeat'];
+/** getRecommendations: Given a Spotify song ID, returns Spotify recommendations*/
+getRecommendations = function(data) {
+  return 'Not implemented';
+};
+
+const endpoints = ['findSong', 'getRecommendations', 'heartbeat'];
 
 const endpointFunctions = {
-  requestSongRecommendations: findSong,
+  findSong: findSong,
+  getRecommendations: getRecommendations,
   heartbeat: healthCheck,
 };
 
