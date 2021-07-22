@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk');
-const needle = require('needle');
+const https = require('https');
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
 /* Endpoints */
@@ -9,32 +9,38 @@ healthCheck = function(data) {
 };
 /** findSong: Searches for song in the Spotify API. */
 /* Parameters:
- * query(string): What the user is searching
- * type(string): Album, artist, playlist, track, show, or episode
- * OPTIONAL - market(string): Localization. Default is US
- * OPTIONAL - limit(int): How many entries to return. Default is 1
+ * query  (string):             What the user is searching
+ * type   (string):             Album, artist, playlist, track, show, or episode
+ * market (string): (optional)  Localization. Default is US
+ * limit  (int):    (optional)  How many entries to return. Default is 1
  */
 /* Reference: https://developer.spotify.com/documentation/web-api/reference/#endpoint-search */
 findSong = function(data) {
-  // build our API string
-  const baseUrl = 'https://api.spotify.com/v1/search?q=';
   const query = data.query;
   const type = data.type;
-  const builtUrl = (baseUrl + query + '&type=' + type).replace(' ', '%20');
-  // API call
+  const market = data.market;
+  const limit = data.limit;
+
   const options = {
+    hostname: 'api.spotify.com',
+    port: 443,
+    path: ('/v1/search?q=' + query + '&type=' + type + '&market=' + market + '&limit=' + limit).replace(' ', '%20'),
+    method: 'GET',
     headers: {
-      'content-type': 'application/json',
-      'authorization': 'Bearer BQAGw3MEt46ILH1rqAwnwPyFnugROjI3hwaPD9sJX_RywsvsNQ7nodr7UXzTp617eZdpn5fxMTg3NZLF-KkN1bIGKOg_gmaAPxeXdi3X8CbknvnCRPPvXagbDeoFCjwE8S0vakqJq9BZoK1LuqM',
+      'Authorization': 'Bearer BQAOm4p3Wf-d6ZbMH0cwu7gDST6Kxcg_KEYoroxwHKSb7MWyz5nA9UDuv6Dc3hIozKZyDbtjVL0m3g1v26Oc3Dpc_xgbCyS-G_QHzo_n1w8CTk_P1LyDQTogA6kXKrfpeUFhP139aoWmaxnHQlg',
     },
   };
-  needle.request('get', builtUrl, options, function(error, response) {
-    if (!error && response.statusCode == 200) {
-      return response.body;
-    } else {
-      return error.message;
-    }
+  
+  const req = https.request(options, (res) => {
+    res.on('data', (d) => {
+      process.stdout.write(d);
+    });
   });
+  
+  req.on('error', (e) => {
+    console.error(e);
+  });
+  req.end();
 };
 
 /** getRecommendations: Given a Spotify song ID, returns Spotify recommendations*/
